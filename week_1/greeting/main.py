@@ -1,4 +1,4 @@
-# user_input.py
+# main.py
 
 from week_1.greeting.greetings import Greeting
 
