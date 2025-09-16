@@ -1,4 +1,4 @@
-# main.py
+# week_1/greeting/main.py
 
 from week_1.greeting.greetings import Greeting
 
