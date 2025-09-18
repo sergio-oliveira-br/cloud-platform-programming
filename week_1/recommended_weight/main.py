@@ -2,7 +2,6 @@
 
 from week_1.recommended_weight.introduction import Introduction
 from week_1.greeting.greetings import Greeting
-from week_1.recommended_weight.user_age import UserAge
 from week_1.recommended_weight.user_height import UserHeight
 import calculator
 
@@ -20,8 +19,7 @@ def main():
     print(welcome.greet())
 
     # Age
-    user_age = input('Lets start with your age, how old are you? ')
-    age = int(UserAge.get_user_age(user_age))
+    age = int(input('Lets start with your age, how old are you? '))
     print(age)
 
     # Height
