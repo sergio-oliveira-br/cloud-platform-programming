@@ -1,6 +1,5 @@
 # week_1/recommended_weight/main.py
 
-
 import greetings
 import calculator
 
@@ -27,7 +26,12 @@ def main():
     print(height)
 
     # Calculator
-    recommended_w = calculator.weight_calculator(age, height)
+    if age <= 0 or height > 1000:
+        print("Age and height must be positive numbers. ")
+        return
+
+    else:
+        recommended_w = calculator.weight_calculator(age, height)
 
     print("The recommend height is: " + str(recommended_w)+ "kg")
 
