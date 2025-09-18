@@ -4,7 +4,7 @@ from week_1.recommended_weight.introduction import Introduction
 from week_1.greeting.greetings import Greeting
 from week_1.recommended_weight.user_age import UserAge
 from week_1.recommended_weight.user_height import UserHeight
-from week_1.recommended_weight.calculator import Calculator
+import calculator
 
 # Problem 2: Write an application that displays the
 # recommended weight given the user’s age and height
@@ -30,7 +30,7 @@ def main():
     print(height)
 
     # Calculator
-    recommended_w = Calculator.weight_calculator(age, height)
+    recommended_w = calculator.weight_calculator(age, height)
 
     print("The recommend height is: " + str(recommended_w)+ "kg")
 
