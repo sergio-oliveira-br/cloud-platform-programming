@@ -2,7 +2,6 @@
 
 from week_1.recommended_weight.introduction import Introduction
 from week_1.greeting.greetings import Greeting
-from week_1.recommended_weight.user_height import UserHeight
 import calculator
 
 # Problem 2: Write an application that displays the
@@ -23,8 +22,7 @@ def main():
     print(age)
 
     # Height
-    user_height = input('\nNow, what is your current height in cm?')
-    height = int(UserHeight.get_user_height(user_height))
+    height = int(input('\nNow, what is your current height in cm?'))
     print(height)
 
     # Calculator
