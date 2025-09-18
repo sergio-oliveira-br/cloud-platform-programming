@@ -1,7 +1,7 @@
 # week_1/recommended_weight/main.py
 
-from week_1.recommended_weight.introduction import Introduction
-from week_1.greeting.greetings import Greeting
+
+import greetings
 import calculator
 
 # Problem 2: Write an application that displays the
@@ -12,10 +12,11 @@ import calculator
 def main():
 
     # Introduction
-    print(Introduction().intro())
+    print("*** Lab1. This is the weight calculator. ***\n")
+
+    # Greeting
     username = input('Please enter your name: \n')
-    welcome = Greeting(username)
-    print(welcome.greet())
+    print(greetings.say_hi(username))
 
     # Age
     age = int(input('Lets start with your age, how old are you? '))
