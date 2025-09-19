@@ -1,6 +1,6 @@
 # week_1/student_union_shop/main.py
 
-from week_1.student_union_shop.store.products import Item, Cap
+from week_1.student_union_shop.store.products import Item, Cap, Shirts, Hoodie
 
 
 # Problem 3: You have been asked to create an
@@ -23,19 +23,22 @@ def main():
 
 
     if product == "1":
-        quantity = int(input("\nCap selected. \n-> Please enter the quantity you would like to buy.\n"))
-        cap_total_price = Cap().calculate_total_cost(quantity)
-        print("\nYour total cost is €{:.2f}.".format(cap_total_price))
+        quantity = int(input("\n@Cap selected. \n-> Please enter the quantity you would like to buy.\n"))
+        total_price = Cap().calculate_total_cost(quantity)
+        print("\nYour total cost is €{:.2f}.".format(total_price))
 
+    elif product == "2":
+        quantity = int(input("\n#Shirt selected. \n-> Please enter the quantity you would like to buy.\n"))
+        total_price = Shirts().calculate_total_cost(quantity)
+        print("\nYour total cost is €{:.2f}.".format(total_price))
+
+    elif product == "3":
+        quantity = int(input("\n$Hoddie selected. \n-> Please enter the quantity you would like to buy.\n"))
+        total_price = Hoodie().calculate_total_cost(quantity)
+        print("\nYour total cost is €{:.2f}.".format(total_price))
 
     else:
         raise ValueError("Invalid input. Please enter a valid input.")
-
-
-
-
-
-
 
 if __name__ == "__main__":
     main()
