@@ -26,12 +26,7 @@ def main():
     print(height)
 
     # Calculator
-    if age <= 0 or height > 1000:
-        print("Age and height must be positive numbers. ")
-        return
-
-    else:
-        recommended_w = calculator.weight_calculator(age, height)
+    recommended_w = calculator.weight_calculator(age, height)
 
     print("The recommend height is: " + str(recommended_w)+ "kg")
 
