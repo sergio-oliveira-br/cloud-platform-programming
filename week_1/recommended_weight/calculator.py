@@ -7,4 +7,11 @@
 
 def weight_calculator(age, height):
     """Calculates the recommended weight based on age and height."""
+
+    if age <= 0 or height <= 0:
+        raise ValueError("Age and height must be positive numbers. ")
+
+    elif height > 1000:
+        raise ValueError("Height must be less than 1000 meters.")
+
     return (height - 100 + age % 10) * 0.90
