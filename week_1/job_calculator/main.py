@@ -1,4 +1,4 @@
-
+# week_1/job_calculator/main.py
 
 # Problem 4: Having just started college, Bob has been busy
 # looking for a part-time job to fund his new college social life
@@ -15,7 +15,27 @@
 
 
 def main():
-    print("Problem 4 - Job Calculator")
+
+    print("*** Problem 4 - Job Calculator ***")
+
+    # Get the job's name
+    job_name_1 = input("Hi Bob, let's calculates your income together. "
+                       "\nTo start, please informe the name of the first job:\n")
+
+    job_name_2 = input("Now, please enter the name of the second job:\n")
+
+    # basic pay rate
+    basic_pay_rate = input("Hi Bob, please informe your basic pay rate: ")
+
+    # hours
+    basic_hours = input("For this " + basic_pay_rate + " how many hours did you work this week? ")
+
+    # overtime
+    overtime_hours = input("Did you make any overtime? \n-> Please informe your overtime hours? ")
+
+
+    
+
 
 
 if __name__ == '__main__':
