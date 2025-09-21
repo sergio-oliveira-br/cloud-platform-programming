@@ -1,5 +1,11 @@
 # week_1/job_calculator/main.py
 
+from week_1.job_calculator.jobs.job import Job
+from week_1.job_calculator.menu.menu_options import display_menu
+from week_1.job_calculator.menu.menu_options import create_new_job
+
+
+
 # Problem 4: Having just started college, Bob has been busy
 # looking for a part-time job to fund his new college social life
 # and after only two weeks of looking he has managed to get
@@ -16,25 +22,26 @@
 
 def main():
 
+    # local variables
+    jobs_list = []
+
     print("*** Problem 4 - Job Calculator ***")
 
-    # Get the job's name
-    job_name_1 = input("Hi Bob, let's calculates your income together. "
-                       "\nTo start, please informe the name of the first job:\n")
+    while True:
+        menu_user_input = display_menu()
 
-    job_name_2 = input("Now, please enter the name of the second job:\n")
+        if menu_user_input == 1 :
+            jobs_list.append(create_new_job())
+            print(jobs_list)
 
-    # basic pay rate
-    basic_pay_rate = input("Hi Bob, please informe your basic pay rate: ")
-
-    # hours
-    basic_hours = input("For this " + basic_pay_rate + " how many hours did you work this week? ")
-
-    # overtime
-    overtime_hours = input("Did you make any overtime? \n-> Please informe your overtime hours? ")
+        elif menu_user_input == 3 :
+            print("Thank you for using this program.")
+            break
 
 
-    
+
+
+
 
 
 
