@@ -35,10 +35,9 @@ class Job:
 
         return (f"*****\n"
                 f"--> Job Name: {job_name} \n"
-                f"  Basic Rate: {basic_pay_rate}\n"
-                f"  Basic Hours: {basic_hours} \n"
-                f"  Overtime Hours: {overtime_hours}\n"
-                f"*****")
+                f"      Basic Rate: {basic_pay_rate}\n"
+                f"      Basic Hours: {basic_hours} \n"
+                f"      Overtime Hours: {overtime_hours}\n")
 
     # BUSINESS LOGIC
     # ... The application should then calculate and
