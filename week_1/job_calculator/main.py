@@ -1,9 +1,8 @@
 # week_1/job_calculator/main.py
 
-from week_1.job_calculator.jobs.job import Job
 from week_1.job_calculator.menu.menu_options import display_menu
 from week_1.job_calculator.menu.menu_options import create_new_job
-
+from week_1.job_calculator.jobs.job import Job
 
 
 # Problem 4: Having just started college, Bob has been busy
@@ -32,18 +31,18 @@ def main():
 
         if menu_user_input == 1 :
             jobs_list.append(create_new_job())
-            print(jobs_list)
+
+        if menu_user_input == 2 :
+            for job in jobs_list:
+                print(job)
+                print("Basic payment: ", Job.basic_pay_calculator(job), "€")
+                print("Overtime payment: ", Job.overtime_pay_calculator(job), "€")
+                print("Total payment: ", Job.total_pay_calculator(job), "€")
+
 
         elif menu_user_input == 3 :
             print("Thank you for using this program.")
             break
-
-
-
-
-
-
-
 
 if __name__ == '__main__':
     main()
