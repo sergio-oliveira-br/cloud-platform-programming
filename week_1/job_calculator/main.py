@@ -1,7 +1,7 @@
 # week_1/job_calculator/main.py
 
-from week_1.job_calculator.menu.menu_options import display_menu
-from week_1.job_calculator.menu.menu_options import create_new_job
+from week_1.job_calculator.user_interface.menu_options import display_menu
+from week_1.job_calculator.user_interface.menu_options import create_new_job
 from week_1.job_calculator.jobs.job import Job
 
 

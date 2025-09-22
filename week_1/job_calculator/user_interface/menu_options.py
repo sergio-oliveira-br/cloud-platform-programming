@@ -1,4 +1,4 @@
-# week_1/job_calculator/menu/menu_options.py
+# week_1/job_calculator/user_interface/menu_options.py
 
 from week_1.job_calculator.jobs.job import Job
 
