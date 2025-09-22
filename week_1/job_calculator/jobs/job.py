@@ -40,3 +40,20 @@ class Job:
                 f"  Overtime Hours: {overtime_hours}\n"
                 f"*****")
 
+    # BUSINESS LOGIC
+    # ... The application should then calculate and
+    # display Bob’s total basic pay for the week, his overtime pay for
+    # the week and his total pay including overtime. Note: The
+    # overtime rate is 1.5 times the basic rate of pay.
+
+    def basic_pay_calculator(self):
+        """Calculates the job's income in basic rate."""
+        return self.basic_pay_rate * self.basic_hours
+
+    def overtime_pay_calculator(self):
+        """Calculates the job's income in overtime rate."""
+        return self.basic_pay_rate * self.overtime_hours * 1.5
+
+    def total_pay_calculator(self):
+        """Calculates the total job's income in total."""
+        return self.basic_pay_calculator() + self.overtime_pay_calculator()
