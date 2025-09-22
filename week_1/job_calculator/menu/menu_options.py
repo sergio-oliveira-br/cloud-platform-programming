@@ -26,7 +26,7 @@ def create_new_job():
     basic_hours = int(input("\nFor this '" + str(job_name) + " €" + str(basic_pay_rate) + "\h', how many hours did you work this week? "))
 
     # overtime
-    overtime_hours = input("\nHow many additional hours did you spend working overtime? ")
+    overtime_hours = int(input("\nHow many additional hours did you spend working overtime? "))
 
     # create a new object
     job = Job( job_name, basic_pay_rate, basic_hours, overtime_hours)
