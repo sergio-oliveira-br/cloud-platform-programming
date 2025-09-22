@@ -24,3 +24,19 @@ class Job:
         self.basic_hours = basic_hours
         self.overtime_hours = overtime_hours
 
+    # toString
+    def __str__(self):
+        """Returns a string representation of the job."""
+
+        job_name = str(self.job_name)
+        basic_pay_rate = str(self.basic_pay_rate)
+        basic_hours = str(self.basic_hours)
+        overtime_hours = str(self.overtime_hours)
+
+        return (f"*****\n"
+                f"--> Job Name: {job_name} \n"
+                f"  Basic Rate: {basic_pay_rate}\n"
+                f"  Basic Hours: {basic_hours} \n"
+                f"  Overtime Hours: {overtime_hours}\n"
+                f"*****")
+
